@@ -1,0 +1,271 @@
+/* https://codepen.io/Dmutres/pen/zYNKXWV */
+
+/* grabbing hand */
+/* https://codepen.io/benkalsky/pen/ByJawa */
+.eventContent {
+  margin-bottom: 2rem;
+}
+.eventContainer {
+  padding: 2.44rem 0 6.44rem 0;
+}
+.bglightgrey {
+  position: relative;
+  background-color: var(--bg-color-lightgrey);
+  padding: 0;
+}
+
+.menu {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 345px;
+}
+.menu--wrapper {
+  counter-reset: count;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu--item {
+  user-select: none;
+  counter-increment: count;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 344px;
+  height: 100%;
+  padding: 0 0.6rem;
+  overflow: hidden;
+}
+
+.menu--item figure {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  user-select: none;
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  transform-origin: center;
+}
+.menu--item figure img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  transform-origin: center;
+}
+
+.menu--item .date {
+  background-color: var(--bg-color-white);
+  padding: 0.6rem 2rem;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  z-index: 10;
+}
+
+.menu--item .eventInfo {
+  color: var(--text-color-white);
+  width: 230px;
+  text-align: left;
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  z-index: 10;
+}
+.menu--item .eventInfo h3,p{
+  font-size: 0.875rem;
+  text-align: left;
+}
+.illustrationBlack {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+}
+.heading {
+  text-align: center;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+/* _______________ */
+
+/* Event styling för eventsidan */
+
+.schemaContainer {
+  padding: 3.75rem 0;
+}
+.eventCard {
+  position: relative;
+}
+.upcomingEvent .eventCard .eventDate {
+  background-color: var(--bg-color-white);
+  padding: 0.6rem 2rem;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  z-index: 10;
+}
+.upcomingEvent .eventCard .eventDate p {
+  font-family: var(--heading-font);
+  margin-bottom: 0;
+}
+.upcomingEvent .eventCard .eventHead {
+  font-family: var(--heading-font);
+  color: var(--text-color-white);
+  text-align: left;
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  z-index: 10;
+}
+.upcomingEvent img {
+  width: 100%;
+}
+.eventWrapp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.eventCard {
+  margin-bottom: 2rem;
+  flex: 0 0 45%;
+}
+.eventCard .eventDate.eventSmall {
+  padding: 0.3rem 1.25rem;
+}
+.eventDate .eventP {
+  font-size: 0.6875rem;
+}
+.eventHead .eventH {
+  font-size: 0.875rem;
+}
+.container.white .largeLogo {
+  display: none;
+}
+@media (min-width: 768px) {
+
+  .eventContainer {
+    max-width: 1150px;
+    margin: auto;
+    padding: 6rem 0 7rem 0;
+  }
+
+  .eventContent {
+    margin-bottom: 6rem;
+  }
+  .menu {
+    height: 366px;
+  }
+  .menu--item {
+    width: 366px;
+    padding: 0 1rem;
+    cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"),
+      all-scroll;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab;
+
+  }
+  .menu--item .eventInfo h3,p{
+    font-size: 1.125rem;
+  }
+  .menu--item:active {
+    cursor: url("https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur"),
+      all-scroll;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -o-grabbing;
+    cursor: -ms-grabbing;
+    cursor: grabbing;
+
+  }
+  .menu--item:before {
+    content: ".";
+    position: absolute;
+    left: 14px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .menu--item .eventInfo {
+    width: 300px;
+  }
+  .heading {
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  /* ________ */
+  /* Eventsidan */
+  .heading.schemaHeading {
+    padding-left: 0rem;
+  }
+  .upcomingEvent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .upcomingEvent img {
+    height: 100%;
+  }
+  .eventCard {
+    margin-bottom: 1.5rem;
+    flex: 0 0 48%;
+  }
+
+  .eventCard.big {
+    flex: 0 0 50%;
+  }
+  .eventWrapp {
+    flex: 0 0 48%;
+  }
+  .eventDate {
+    font-size: var(--text-font-size-desktop);
+  }
+  .eventHead h3 {
+    font-size: var(--heading-font-size-desktop);
+  }
+  .eventDate .eventP {
+    font-size: 1.125rem;
+  }
+  .eventHead .eventH {
+    font-size: 1.25rem;
+  }
+  .schemaContainer {
+    position: relative;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .illustrationBlack {
+    bottom: -11%;
+    left: -10%;
+  }
+}

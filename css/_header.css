@@ -1,0 +1,123 @@
+.aboutContainer {
+  padding: 5.5rem 1rem 1.75rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  text-align: center;
+  position: relative;
+}
+.aboutContainer.aboutGrey {
+  background-color: var(--secondary-color);
+}
+
+.headIllustration {
+  position: absolute;
+}
+.headLeft {
+  top: 17%;
+  left: 0;
+}
+.headRight {
+  bottom: -44%;
+  right: 0;
+  z-index: 2;
+}
+
+.aboutText {
+  max-width: 850px;
+  margin: auto;
+  color: var(--text-color-white);
+}
+
+/* För blocket längre ner på sidan */
+.aboutContainer.aboutWhite {
+  background-color: var(--bg-color-white);
+  padding: 4rem 1rem;
+}
+.aboutText.aboutWhite p {
+  margin-bottom: 0.8rem;
+}
+.aboutText.colorWhite {
+  color: var(--text-color-black);
+}
+
+/* Kontakt sida */
+.aboutContainer.aboutGrey.greyContact {
+  background-color: var(--secondary-color);
+  position: relative;
+  padding: 4rem 1rem;
+}
+.veteBlackDown {
+  position: absolute;
+  left: -19%;
+  top: -50%;
+}
+.aboutText p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.aboutText p b a {
+  font-size: var(--text-font-size-mobile);
+  padding: 0;
+}
+.aboutText.colorWhite p {
+  margin-bottom: 1rem;
+}
+.aboutText.colorWhite p b a {
+  font-size: var(--text-font-size-mobile);
+  color: var(--text-color-black);
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .aboutContainer {
+    padding: 5rem 0;
+  }
+  .headLeft {
+    top: -16%;
+    left: 0;
+  }
+  .headRight {
+    bottom: -63%;
+    right: 0;
+  }
+
+  /* blocket på meny sidan längre ner */
+  .aboutContainer.aboutWhite {
+    background-color: var(--bg-color-white);
+    padding: 4rem 1rem;
+    width: 770px;
+    margin: auto;
+  }
+  .aboutText.colorWhite .colorWhiteP {
+    margin-bottom: 3rem;
+  }
+  /* För blocket längre ner på sidan */
+  .aboutContainer.aboutWhite {
+    padding: 4.5rem 0rem;
+  }
+
+  .aboutText.colorWhite.topLunch p {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .aboutText.colorWhite p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  /* kontakt sida */
+  .veteBlackDown {
+    position: absolute;
+    left: -11%;
+    top: -63%;
+  }
+  .aboutText p b a {
+    font-size: var(--text-font-size-desktop);
+    padding: 0;
+  }
+  .aboutText.colorWhite p b a {
+    font-size: var(--text-font-size-desktop);
+  }
+  .aboutContainer.aboutGrey.greyContact {
+    padding: 4.5rem 1rem;
+  }
+}

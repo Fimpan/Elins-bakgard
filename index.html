@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elins bakgård</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ueq5ize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="illustrations/Menu-Logga.svg" alt="Logo Image"
+          /></a>
+        </div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">HEM</a></li>
+          <li><a href="menylunch.html">LUNCHMENY</a></li>
+          <li><a href="evenemang.html">EVENEMANG & UTSTÄLLNINGAR</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          <li>
+            <a href="#" title="globe" class="navIcon">
+              <span class="material-symbols-outlined"> language </span>
+            </a>
+            <a href="#" title="hearing" class="navIcon">
+              <span class="material-symbols-outlined"> hearing </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <section class="section slider-section">
+        <div class="containerSwiper slider-column">
+          <div class="swiper swiper-slider">
+            <div class="swiper-wrapper">
+              <img
+                class="swiper-slide"
+                src="img/Skarmavbild2023-12-2 kl.17.28.27.png"
+                alt="Swiper"
+              />
+              <img
+                class="swiper-slide"
+                src="img/Skarmavbild2023-12-21kl.17.16.19.png"
+                alt="Swiper"
+              />
+              <img
+                class="swiper-slide"
+                src="img/Skarmavbild2023-12-21kl.17.17.24.png"
+                alt="Swiper"
+              />
+            </div>
+            <span class="swiper-pagination"></span>
+          </div>
+        </div>
+      </section>
+      <section class="timeOpen">
+        <img
+          class="heroIllustration heroLeft"
+          src="/illustrations/illustration-white-leftside-desktop.svg"
+          alt="illustration växt"
+        />
+        <div class="textPosition">
+          <p class="heroText">
+            SVUNNA TIDER, DOFT AV HEMBAKT & PUTTRANDE SOPPOR
+          </p>
+        </div>
+        <div class="btnContainer white">
+          <a href="#footer" class="btn white">SE VÅRA ÖPPETTIDER</a>
+        </div>
+        <img
+          class="heroIllustration heroRight"
+          src="/illustrations/illustration-white-rightside-desktop.svg"
+          alt="illustration växt"
+        />
+      </section>
+    </section>
+
+    <div class="bgBeige">
+      <div class="container beige">
+        <section class="cards">
+          <div>
+            <section class="animation-group">
+              <article data-animation="fadeInUp" class="infoContainer">
+                <div class="pictureContainer">
+                  <picture>
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/sallad-desktop.png"
+                    />
+                    <source
+                      media="(max-width:769px)"
+                      srcset="img/sallad-mobile.png"
+                    />
+                    <img
+                      src="img/sallad-desktop.png"
+                      alt="sallad"
+                      style="width: auto"
+                    />
+                  </picture>
+                </div>
+
+                <div class="cardInfo">
+                  <h2>KOM OCH BESÖK OSS IDAG!</h2>
+                  <div class="redLine"></div>
+                  <h3>DAGENS LUNCH 162 :-</h3>
+                  <p>
+                    Indisk lins & potatissoppa med myntayoghurt. Kycklingfilé
+                    med ris, currysås & broccoli. inkl. tårtbit / småkaka
+                  </p>
+                  <div class="btnContainer">
+                    <a href="menylunch.html" class="btn">SE VÅR LUNCHMENY</a>
+                  </div>
+                </div>
+              </article>
+            </section>
+            <picture class="greyIllustration">
+              <source
+                media="(min-width:768px)"
+                srcset="/illustrations/illustration-grey-desktop.svg"
+              />
+              <source
+                media="(max-width:769px)"
+                srcset="/illustrations/illustration-grey-mobile.svg"
+              />
+              <img
+                src="/illustrations/illustration-grey-desktop.svg"
+                alt="illustration"
+              />
+            </picture>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="bgWhite">
+      <div class="container white">
+        <section class="cards">
+          <div>
+            <section class="animation-group">
+              <article data-animation="fadeInUp" class="experienceCraft">
+                <div class="craft firstcraft">
+                  <picture>
+                    <source
+                      media="(min-width:768px)"
+                      srcset="/img/fika-koppar.png"
+                    />
+                    <source
+                      media="(max-width:769px)"
+                      srcset="/img/fika-mobile.png"
+                    />
+                    <img src="/img/fika-koppar.png" alt="Logga liten" />
+                  </picture>
+                  <picture>
+                    <source
+                      media="(min-width:768px)"
+                      srcset="/img/lillrummet.png"
+                    />
+                    <source
+                      media="(max-width:769px)"
+                      srcset="/img/lillrummet-mobile.png"
+                    />
+                    <img src="/img/lillrummet.png" alt="Logga liten" />
+                  </picture>
+                </div>
+
+                <div class="craft secondCraft">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="/img/spis.png" />
+                    <source
+                      media="(max-width:769px)"
+                      srcset="/img/spis-mobile.png"
+                    />
+                    <img src="/img/spis.png" alt="Logga liten" />
+                  </picture>
+                </div>
+                <div class="craftText">
+                  <h3>UPPLEV VÄRMLÄNSKT HANTVERK</h3>
+                  <p>
+                    Välkommen till vår värmländska oas! Upptäck lokalt skapad
+                    konst och hantverk i vårt café. Varje detalj är noga
+                    utformad för en unik upplevelse. Utforska och fördjupa dig i
+                    vår rika konstnärliga arv.
+                  </p>
+                </div>
+
+              </article>
+            </section>
+          </div>
+        </section>
+      </div>
+      <picture class="smallLogo">
+        <source
+          media="(min-width:768px)"
+          srcset="/illustrations/eling-bakgard-liten-desktop.svg"
+        />
+        <source
+          media="(max-width:769px)"
+          srcset="/illustrations/elins-Bakgard-liten.svg"
+        />
+        <img
+          src="/illustrations/eling-bakgard-liten-desktop.svg"
+          alt="Logga liten"
+        />
+      </picture>
+    </div>
+    <div class="bglightgrey">
+      <div class="container lightgrey">
+        <section class="cards">
+          <div>
+            <section class="animation-group">
+              <article data-animation="fadeInUp" class="eventContainer">
+                <div class="eventContent">
+                  <div class="heading eventHeading">
+                    <h2>Se vad som händer på Elins bakgård!</h2>
+                  </div>
+                  <div class="menu">
+                    <div class="menu--wrapper">
+                      <div class="menu--item">
+                        <p class="date">5 - 8 DEC</p>
+                        <figure>
+                          <img src="/img/afternoon_glogg.png" alt="AFTERNOON" />
+                        </figure>
+                        <div class="eventInfo">
+                          <h3>AFTERNOON GLÖGG</h3>
+                          <p>
+                            Välkommen in och ta del av julens smaker på Elins
+                            Bakgård. Begränsat antal platser.
+                          </p>
+                        </div>
+                        <a href="evenemang.html" class="card-link"></a>
+                      </div>
+                      <div class="menu--item">
+                        <p class="date">13 DEC</p>
+                        <figure>
+                          <img
+                            src="/img/lucia_frukost.png"
+                            alt="Afternoon glögg"
+                          />
+                        </figure>
+                        <div class="eventInfo">
+                          <h3>LUCIA FRUKOST</h3>
+                          <p>
+                            Den 13 december firar vi lucia med en mysig
+                            julfrukost. Ta med dig familjen och njut av vacker
+                            körsång.
+                          </p>
+                        </div>
+                        <a href="evenemang.html" class="card-link"></a>
+                      </div>
+                      <div class="menu--item">
+                        <p class="date">30 DEC</p>
+                        <figure>
+                          <img
+                            src="/img/nyarsmingle.png"
+                            alt="Afternoon glögg"
+                          />
+                        </figure>
+                        <div class="eventInfo">
+                          <h3>NYÅRS MINGEL</h3>
+                          <p>
+                            Nyårs mingel på bakgården! Den 30 december dukar vi
+                            upp för fest, glitter , glamor och bubbiga drycker.
+                          </p>
+                        </div>
+                        <a href="evenemang.html" class="card-link"></a>
+                      </div>
+
+                      <div class="menu--item">
+                        <p class="date">24 JAN</p>
+                        <figure>
+                          <a href=""></a>
+                          <img
+                            src="/img/Vinter-Event.png"
+                            alt="Afternoon glögg"
+                          />
+                        </figure>
+                        <div class="eventInfo">
+                          <h3>VINTER VERNISSAGE</h3>
+                          <p>
+                            Den 13 december firar vi lucia med en mysig
+                            julfrukost. Ta med dig familjen och njut av vacker
+                            körsång.
+                          </p>
+                        </div>
+                        <a href="evenemang.html" class="card-link"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btnContainer">
+                  <a href="evenemang.html" class="btn"
+                    >EVENEMANG & UTSTÄLLNINGAR</a
+                  >
+                </div>
+              </article>
+            </section>
+            <picture class="illustrationBlack">
+              <source
+                media="(min-width:768px)"
+                srcset="/illustrations/illustration-black-desktop.svg"
+              />
+              <source
+                media="(max-width:769px)"
+                srcset="/illustrations/illustration-black-mobile.svg"
+              />
+              <img
+                src="/illustrations/illustration-black-desktop.svg"
+                alt="Logga liten"
+              />
+            </picture>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="bgCampaignVideo">
+      <div class="container campaignVideo">
+        <div class="video-container">
+          <video id="myVideo" class="elinsVideo" height="auto" controls>
+            <source
+              type="video/mp4"
+              src="video/Elins-Bakgard-kampanjfilm.mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section class="container formContainer">
+      <div class="subscribe">
+        <picture class="formIllustration formIllustrationLeft">
+          <source
+            media="(min-width:768px)"
+            srcset="/illustrations/illustration-white-left-form-desktop.svg"
+          />
+          <source
+            media="(max-width:769px)"
+            srcset="/illustrations/illustration-white-left-form-mobile.svg"
+          />
+          <img
+            src="/illustrations/illustration-white-left-form-desktop.svg"
+            alt="Logga liten"
+          />
+        </picture>
+        <article class="subInfo">
+          <h2 class="subscribe__title">Lunchmeny & nyhetsbrev</h2>
+          <p class="subscribe__copy">
+            Få veckans lunchmeny och kommande händelser varje vecka
+          </p>
+        </article>
+        <div class="forms">
+          <div class="form">
+            <input
+              type="email"
+              class="form__email"
+              placeholder="*EPOSTADRESS"
+            />
+          </div>
+          <div class="form">
+            <input
+              type="tel"
+              class="form__email number"
+              placeholder="*MOBILNUMMER"
+            />
+          </div>
+        </div>
+        <div class="form__privacy">
+          <input id="checkbox" name="checkbox" type="checkbox" required />
+          <label for="checkbox"
+            >Jag har tagit del av Elins bakgårds sektretesspolicy och godkänner
+            att mina uppgifter hanteras och lagras enligt denna.</label
+          >
+        </div>
+        <div class="btnContainer white">
+          <button class="form__button btn white" id="subscribeButton">
+            PRENUMERERA
+          </button>
+        </div>
+        <picture class="formIllustration formIllustrationRight">
+          <source
+            media="(min-width:768px)"
+            srcset="/illustrations/illustration-white-right-form-desktop.svg"
+          />
+          <source
+            media="(max-width:769px)"
+            srcset="/illustrations/illustration-white-right-form-mobile.svg"
+          />
+          <img
+            src="/illustrations/illustration-white-right-form-desktop.svg"
+            alt="Logga liten"
+          />
+        </picture>
+      </div>
+    </section>
+    <div class="bggrey">
+      <div class="container grey">
+        <section class="cards">
+          <div>
+            <section class="animation-group">
+              <article data-animation="fadeInUp" class="instaContainer">
+                <div class="heading instaHeading">
+                  <h2>
+                    Följ oss på instagram
+                    <a
+                      href="https://www.instagram.com/elinsbakgard"
+                      target="_blank"
+                      >@elinsbakgard</a
+                    >
+                  </h2>
+                </div>
+                <div class="instaPicContainer">
+                  <div class="instaItem">
+                    <img src="/img/instaOne.png" alt="Elins kamin" />
+                    <a
+                      href="https://www.instagram.com/elinsbakgard"
+                      target="_blank"
+                      class="card-links"
+                    ></a>
+                  </div>
+                  <div class="instaItem">
+                    <img src="/img/instaTwo.png" alt="Sallads bar" />
+                    <a
+                      href="https://www.instagram.com/elinsbakgard"
+                      target="_blank"
+                      class="card-links"
+                    ></a>
+                  </div>
+                  <div class="instaItem">
+                    <img
+                      src="/img/instaThree.png"
+                      alt="Krans som Elin har gjort"
+                    />
+                    <a
+                      href="https://www.instagram.com/elinsbakgard"
+                      target="_blank"
+                      class="card-links"
+                    ></a>
+                  </div>
+                  <div class="instaItem">
+                    <img src="/img/instaFour.png" alt="Hängande koppar" />
+                    <a
+                      href="https://www.instagram.com/elinsbakgard"
+                      target="_blank"
+                      class="card-links"
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footerIllustration footerRight">
+        <img
+          src="/illustrations/illustration-white-rightside-desktop.svg"
+          alt="Illustration vete"
+        />
+      </div>
+      <section class="footerContainer">
+        <div class="elinsLogo">
+          <a href="index.html">
+            <img src="illustrations/elinsLogo.svg" alt="loggan" />
+          </a>
+        </div>
+
+        <address class="footerContent adress">
+          <h4>ADRESS</h4>
+          <ul>
+            <li><p>Elins bakgård</p></li>
+            <li><p>Magasingatan 4</p></li>
+            <li><p>671 31 Arvika</p></li>
+          </ul>
+        </address>
+        <div class="footerContent openTime">
+          <h4>ÖPPETTIDER</h4>
+          <ul>
+            <li class="day"><p>Mån: Stängt</p></li>
+            <li class="day"><p>Tis: 10-17</p></li>
+            <li class="day"><p>Ons: 10-18</p></li>
+            <li class="day"><p>Tors: 10-17</p></li>
+            <li class="day"><p>Fred: 10-17</p></li>
+            <li class="day"><p>Lör: 10-16</p></li>
+            <li class="day"><p>Sön: Stängt</p></li>
+          </ul>
+        </div>
+        <div class="footerContent contact">
+          <h4>KONTAKT</h4>
+          <ul>
+            <li><a href="tel:+0768197583">076-819 75 83</a></li>
+            <li>
+              <a href="mailto:info@elinsbakgard.se">info@elinsbakgard.se</a>
+            </li>
+          </ul>
+          <section class="socialContainer socialMedia">
+            <div class="socialIcon">
+              <a
+                href="https://www.facebook.com/elinsbakgard"
+                title="facebook"
+                target="_blank"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="socialIcon">
+              <a
+                href="https://www.instagram.com/elinsbakgard/"
+                target="_blank"
+                title="instagram"
+              >
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="socialIcon">
+              <a
+                href="https://www.tripadvisor.se/Restaurant_Review-g285721-d12695733-Reviews-Elins_Bakgard-Arvika_Varmland_County.html"
+                title="instagram"
+                target="_blank"
+              >
+                <i class="fa fa-tripadvisor" aria-hidden="true"></i>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <section class="socialContainer recommend">
+          <img src="/img/rekommenderar.png" alt="white guide" />
+          <img src="/img/rekommenderar.png" alt="white guide" />
+        </section>
+      </section>
+      <div class="footerIllustration footerLeft">
+        <img
+          src="/illustrations/illustration-white-leftside-desktop.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="swiper.js"></script>
+  </body>
+</html>

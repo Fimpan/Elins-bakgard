@@ -1,0 +1,77 @@
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.btnContainer .btn {
+  font-family: var(--btn-font);
+  font-size: var(--btn-font-size-mobile);
+  font-weight: var(--btn-font-weight);
+  border: 1px solid var(--text-color-black);
+  color: var(--text-color-black);
+  width: 304px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  transform: perspective(1px) translateZ(0);
+  transition: 0.4s;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  clip-path: inset(0 100% 0 0);
+  opacity: 1;
+  transition: 0.4s;
+  z-index: -1;
+}
+.btnContainer .btn:hover {
+  color: var(--text-color-white);
+}
+.btnContainer .btn:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+.btnContainer .white::before {
+  background-color: var(--bg-color-white);
+}
+.btnContainer .white:hover {
+  color: var(--text-color-black);
+}
+
+.btnContainer .white {
+  color: var(--text-color-white);
+  border: 1px solid var(--text-color-white);
+}
+
+@media (min-width: 768px) {
+  .btnContainer .btn {
+    font-family: var(--btn-font);
+    font-size: var(--btn-font-size-desktop);
+    font-weight: var(--btn-font-weight);
+    border: 1px solid var(--text-color-black);
+    color: var(--text-color-black);
+    width: 426px;
+    height: 56px;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .btnContainer .white::before {
+    background-color: var(--bg-color-white);
+  }
+  .btnContainer .white:hover {
+    color: var(--text-color-black);
+  }
+
+  .btnContainer .white {
+    color: var(--text-color-white);
+    border: 1px solid var(--text-color-white);
+  }
+}

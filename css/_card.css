@@ -1,0 +1,257 @@
+.pictureContainer {
+  text-align: center;
+}
+.pictureContainer picture img {
+  width: 100%;
+}
+.bgBeige {
+  position: relative;
+  padding: 5.5rem 0 6rem 0;
+  background-color: var(--bg-color-beige);
+}
+
+.bgBeige.pt35pb31 {
+  padding: 3.5rem 0 3rem 0;
+}
+
+.bgBeige.pt367pb7 {
+  padding: 3.5rem 0 3.5rem 0;
+}
+.beige .greyIllustration {
+  position: absolute;
+  bottom: -20%;
+  right: 0%;
+}
+.cardInfo {
+  padding: 3.125rem 0;
+  /* width: 85%; */
+  /* margin: auto; */
+  text-align: center;
+
+}
+
+.cardInfo .redLine {
+  margin: auto;
+  height: 2px;
+  width: 80%;
+  background-color: #9f4a31;
+  margin-bottom: 1.25rem;
+}
+.cardInfo p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bgWhite {
+  position: relative;
+  padding: 3.5rem 0;
+}
+.experienceCraft .craft img {
+  width: 100%;
+}
+.experienceCraft .craft.firstcraft picture img {
+  margin-bottom: 1.375rem;
+}
+
+.experienceCraft .craftText {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 90%;
+  padding: 1.25rem 1rem;
+}
+.experienceCraft .craftText h3 {
+  color: #9f4a31;
+}
+.experienceCraft .craftText h3,
+p {
+  margin-bottom: 0;
+  text-align: center;
+}
+.experienceCraft .craftText p {
+  margin-bottom: 0;
+  text-align: center;
+}
+.smallLogo {
+  position: absolute;
+  right: 3%;
+  bottom: 1%;
+}
+
+.largeLogo {
+  display: none;
+}
+
+/* Lunch meny sida vete grå */
+.vetePrice {
+  position: absolute;
+  left: -17%;
+  top: -10%;
+}
+
+/* kontaktsida */
+.bgBeige.contactBeige {
+  padding: 3.5rem 0 3rem 0;
+}
+.ContactRoundLogo {
+  display: none;
+}
+.bgLightgrey {
+  background-color: var(--bg-color-lightgrey);
+
+  padding: 3.5rem 0;
+}
+
+.veteBlackUp {
+  display: none;
+}
+@media (min-width: 768px) {
+  .infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .infoContainer.reverse {
+    position: relative;
+    flex-direction: row-reverse;
+    padding: 12rem 0 6.375rem 0;
+  }
+  .infoContainer.reverse.reverseContact {
+    padding: 0;
+  }
+  .infoContainer.reverse.eventReverse {
+    padding: 0;
+  }
+  .infoContainer.reverse .largeLogo {
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    z-index: 100;
+  }
+  .infoContainer .cardInfo {
+    flex: 0 0 40%;
+  }
+  .bgBeige {
+    padding: 12rem 0 6rem 0;
+  }
+  .bgBeige.pt35pb31 {
+    padding: 8.5rem 0;
+  }
+  .bgBeige.pt367pb7 {
+    padding: 7rem 0 7rem 0;
+  }
+  .beige,
+  .white {
+    max-width: 1200px;
+  }
+  .beige .greyIllustration {
+    bottom: -25%;
+  }
+  /* Bild container */
+
+  .bgWhite {
+    padding: 8.5rem 0;
+  }
+  .experienceCraft {
+    display: flex;
+    justify-content: space-between;
+  }
+  .experienceCraft .craftText {
+    width: 40%;
+    top: 49%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 1.25rem;
+  }
+  .experienceCraft .craftText p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .experienceCraft .craft.firstcraft {
+    flex: 0 0 55%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .experienceCraft .craft picture {
+    width: 100%;
+  }
+
+  .experienceCraft .craft img {
+    height: 100%;
+    object-fit: cover; /* This will make the images cover the container without distorting their aspect ratios */
+  }
+  .experienceCraft .craft .secondCraft picture {
+    width: 100%;
+  }
+  .experienceCraft .craft.firstcraft img {
+    margin-bottom: 0;
+  }
+  .experienceCraft .craft.secondCraft {
+    flex: 0 0 42%;
+  }
+
+  /* Meny sidan */
+  .experienceCraft.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .craftText.menySida {
+    left: 73%;
+    top: 50%;
+  }
+
+  /* Lunch meny sida vete grå */
+  .vetePrice {
+    position: absolute;
+    left: -0%;
+    top: -14%;
+  }
+  /* Logga eventsida  */
+  .largeLogo {
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+  }
+  /* kontaktsida */
+  .bgLightgrey {
+    padding: 7rem 0;
+  }
+  .experienceCraft.logoPosition {
+    /* padding: 8rem 0; */
+    position: relative;
+  }
+  .bgBeige.contactBeige {
+    padding: 8.5rem 0;
+  }
+  .ContactRoundLogo {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: -10%;
+  }
+  .bgWhite.veteBlackupPosition {
+    position: relative;
+  }
+  .veteBlackUp {
+    display: block;
+    position: absolute;
+    top: -22%;
+    left: -9%;
+  }
+}
+
+/* logga rund på elins sida */
+@media (min-width: 1400px) {
+  .ContactRoundLogo {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: -10%;
+  }
+}

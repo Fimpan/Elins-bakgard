@@ -1,0 +1,89 @@
+footer {
+  position: relative;
+  color: var(--text-color-white);
+  background-color: #273a43;
+  text-align: center;
+  padding: 4rem 0 6rem 0;
+
+}
+
+footer ul li {
+  font-family: var(--text-font);
+  margin-bottom: 0.75rem;
+}
+footer ul li p {
+  margin-bottom: 0rem;
+  text-align: center;
+}
+footer ul .day {
+  margin-bottom: 0.3rem;
+}
+.footerIllustration {
+  position: absolute;
+}
+
+.footerIllustration.footerRight {
+  top: 0;
+  right: 0;
+}
+.footerIllustration.footerLeft {
+  bottom: 0;
+  left: 0;
+}
+.footerContainer {
+  position: relative;
+  max-width: var(--max-width);
+  margin: auto;
+  z-index: 1;
+
+}
+.elinsLogo {
+  margin-bottom: 4rem;
+}
+.footerContent {
+  margin-bottom: 3rem;
+}
+.socialContainer {
+  display: flex;
+  justify-content: center;
+}
+.socialMedia {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.socialMedia a {
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+.footerContent.contact ul li a {
+  font-size: var(--nav-font-size);
+}
+.recommend {
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  footer {
+    text-align: left;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+  }
+
+  .footerContainer .footerContent ul li p {
+    text-align: left;
+  }
+  .footerContent.contact ul li a{
+    padding: 0;
+  }
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recommend img {
+    height: 140px;
+  }
+  .socialContainer {
+    justify-content: left;
+  }
+}

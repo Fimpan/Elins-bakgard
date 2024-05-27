@@ -1,0 +1,40 @@
+@import "/css/_subForm.css";
+@import "/css/_menu.css";
+@import "/css/_variables.css";
+@import "/css/_hero.css";
+@import "/css/_cardAnimation.css";
+@import "/css/_picContainer.css";
+@import "/css/_typography.css";
+@import "/css/_footer.css";
+@import "/css/_swiperSlider.css";
+@import "/css/_button.css";
+@import "/css/_card.css";
+@import "/css/_instaFeed.css";
+@import "/css/_event.css";
+@import "/css/_campaignVideo.css";
+@import "/css/_header.css";
+@import "/css/_lunch.css";
+@import "/css/_priceSection.css";
+@import "/css/_timeline.css";
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 1rem;
+}
